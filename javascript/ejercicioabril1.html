@@ -1,0 +1,38 @@
+<html>
+<head>
+    <style>
+        img{
+            width:200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div><img id="img1" src="cat.jpg"></div>
+    <br>
+    <div><input type="button" id="btnMostrarOcultar" value="Ocultar" onclick="MostrarOcultar()"></div>
+
+    <script>
+        
+        function MostrarOcultar()
+        {
+            var imagen = document.getElementById("img1");
+            var boton = document.getElementById("btnMostrarOcultar");
+
+            if(imagen.style.display == "none")
+            {
+                imagen.style.display = "block";
+                boton.value = "Ocultar";
+            }
+            else
+            {
+                imagen.style.display = "none";
+                boton.value = "Mostrar";
+            }
+            
+        }
+    
+    </script>
+
+</body>
+</html>
